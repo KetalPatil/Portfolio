@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketal Patil | AI/ML & Data Analyst Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for smooth scrolling and clean font */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom hover for Project Cards */
+        .project-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-4px);
+        }
+        .project-card {
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden my-8 border border-gray-100">
+
+        <!-- --- Header & Contact Section --- -->
+        <header class="p-6 sm:p-10 bg-cyan-600 text-white rounded-t-3xl">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-1" id="name">Ketal Nitin Patil</h1>
+                    <p class="text-xl sm:text-2xl font-light text-cyan-100" id="title"></p>
+                    <p class="mt-4 text-sm font-medium bg-cyan-700/50 p-2 rounded-lg inline-block">
+                        <span class="font-semibold text-yellow-300" id="achievement"></span> for Academic Excellence
+                    </p>
+                </div>
+                <div class="mt-6 md:mt-0 flex flex-col space-y-2" id="contact-info">
+                    <!-- Contact icons will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </header>
+
+        <main class="p-6 sm:p-10">
+
+            <!-- --- Summary --- -->
+            <section class="mb-10 p-6 bg-cyan-50 rounded-2xl border border-cyan-200 shadow-inner">
+                <h2 class="text-2xl font-bold text-cyan-700 mb-3">Professional Summary</h2>
+                <p class="text-gray-700 leading-relaxed" id="summary"></p>
+            </section>
+            
+            <!-- --- Education Section --- -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-5 border-b-2 pb-2 border-gray-200 flex items-center">
+                    <!-- GraduationCap Icon -->
+                    <i data-lucide="graduation-cap" class="w-6 h-6 mr-2 text-cyan-600"></i>
+                    Education
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6" id="education-list">
+                    <!-- Education cards will be inserted here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- --- Experience (Internship) --- -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-5 border-b-2 pb-2 border-gray-200 flex items-center">
+                    <!-- Code Icon -->
+                    <i data-lucide="code" class="w-6 h-6 mr-2 text-cyan-600"></i>
+                    Experience
+                </h2>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-cyan-700" id="experience-title"></h3>
+                    <p class="text-sm text-gray-500 mt-1">AICTE-Eduskills, supported by Google for Developers</p>
+                    <p class="mt-3 text-gray-700" id="experience-details"></p>
+                </div>
+            </section>
+
+            <!-- --- Projects Section --- -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-5 border-b-2 pb-2 border-gray-200 flex items-center">
+                    <!-- Cpu Icon -->
+                    <i data-lucide="cpu" class="w-6 h-6 mr-2 text-cyan-600"></i>
+                    Key Projects
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6" id="projects-list">
+                    <!-- Project cards will be inserted here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- --- Skills Section --- -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-5 border-b-2 pb-2 border-gray-200 flex items-center">
+                    <!-- Database Icon -->
+                    <i data-lucide="database" class="w-6 h-6 mr-2 text-cyan-600"></i>
+                    Technical Skills
+                </h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4" id="skills-grid">
+                    <!-- Skill categories will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="p-6 sm:p-8 bg-gray-800 text-white text-center rounded-b-3xl mt-10">
+            <p class="text-sm">Built with HTML, Tailwind CSS & JavaScript. Ready to tackle Data Science & AI challenges.</p>
+        </footer>
+    </div>
+
+    <!-- --- JavaScript for Data Insertion and Dynamic Content --- -->
+    <script>
+        const data = {
+            name: "Ketal Nitin Patil",
+            title: "Final-Year Engineering Student | AI/ML & Data Analyst",
+            email: "ketal.patil134@gmail.com",
+            phone: "9359960959",
+            linkedin: "linkedin.com/in/ketal-patil-2a7835259/",
+            github: "github.com/KetalPatil",
+            summary: "Final-year engineering student with a strong academic background and hands-on project experience in **AI/ML** and **Data Analysis**. Passionate about leveraging technical and analytical skills to solve real-world problems and contribute meaningfully to innovative solutions.",
+            education: [
+                { degree: "B.Tech, CSBS", institution: "JSPM's Rajarshi Shahu College of Engineering, Pune", grade: "CGPA: 9.56", years: "2022 - 2026" },
+                { degree: "Higher Secondary", institution: "Dhanaji Nana Chaudhari Vidya Prabodhini's Arts, Commerce and Science Junior College, Jalgaon", grade: "Percentage: 82.83%", years: "2020 - 2022" },
+                { degree: "Secondary", institution: "St. Lawrence High School, Jalgaon", grade: "Percentage: 93.40%", years: "2020" }
+            ],
+            skills: {
+                languages: ["C++", "SQL", "Python"],
+                ai_ml: ["Machine Learning", "Deep Learning", "NLP"],
+                databases_cloud: ["MySQL", "MongoDB", "Microsoft SQL Server (MSSQL)", "AWS"],
+                data_viz: ["Power BI", "Matplotlib", "Plotly"],
+                tools: ["GitHub", "VSCode", "Jupyter", "Google Colab"]
+            },
+            projects: [
+                {
+                    title: "Passive Solar Tracking for Improved Solar Panel Efficiency",
+                    icon: 'trending-up',
+                    description: "Conducted **data analysis** to track sun movements and improve solar energy efficiency. Designed and implemented a system to monitor sun positioning and maximize energy output. Applied **statistical analysis** to identify trends and patterns in solar energy data.",
+                    tags: ["Data Analysis", "Energy Efficiency", "Statistical Modeling"],
+                    githubLink: "#" // Placeholder: Please update this to a real GitHub link
+                },
+                {
+                    title: "Talk-N-Tally: Intelligent Voice Quiz System",
+                    icon: 'cpu',
+                    description: "Developed an intelligent quiz system with **voice-based answer input** (implying NLP/Speech-to-Text). Implemented **SQL database** for secure and efficient storage of quiz results. Connected **Power BI** to multiple data sources (SQL, Excel, CSV, APIs) for real-time analysis.",
+                    tags: ["NLP/STT", "SQL", "Data Visualization", "Power BI"],
+                    githubLink: "#" // Placeholder: Please update this to a real GitHub link
+                }
+            ],
+            experience: {
+                title: "AICTE-Eduskills AI-ML Virtual Intern",
+                details: "Completed a 10-week AI-ML Virtual Internship supported by Google for Developers. Gained hands-on experience with AI and ML concepts, algorithms, and applications, improving skills in data preprocessing, model training, evaluation, and deployment."
+            },
+            achievement: "Reliance Foundation Scholar"
+        };
+
+        // Function to create Lucide Icon SVG string
+        const getIconHtml = (iconName, className) => {
+            return `<i data-lucide="${iconName}" class="${className}"></i>`;
+        };
+
+        // --- 1. Populate Header and Summary ---
+        document.getElementById('title').textContent = data.title;
+        document.getElementById('achievement').textContent = data.achievement;
+        document.getElementById('summary').innerHTML = data.summary.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        document.getElementById('experience-title').textContent = data.experience.title;
+        document.getElementById('experience-details').textContent = data.experience.details;
+
+        const contactHtml = `
+            <div class="flex items-center text-sm lg:text-base text-gray-100 hover:text-white transition duration-300">
+                ${getIconHtml('mail', 'w-4 h-4 mr-2 flex-shrink-0')}
+                <a href="mailto:${data.email}" target="_blank" rel="noopener noreferrer" class="truncate font-medium hover:underline">${data.email}</a>
+            </div>
+            <div class="flex items-center text-sm lg:text-base text-gray-100">
+                ${getIconHtml('smartphone', 'w-4 h-4 mr-2 flex-shrink-0')}
+                <span class="font-medium truncate">${data.phone}</span>
+            </div>
+            <div class="flex items-center text-sm lg:text-base text-gray-100 hover:text-white transition duration-300">
+                ${getIconHtml('linkedin', 'w-4 h-4 mr-2 flex-shrink-0')}
+                <a href="https://${data.linkedin}" target="_blank" rel="noopener noreferrer" class="truncate font-medium hover:underline">LinkedIn Profile</a>
+            </div>
+            <div class="flex items-center text-sm lg:text-base text-gray-100 hover:text-white transition duration-300">
+                ${getIconHtml('github', 'w-4 h-4 mr-2 flex-shrink-0')}
+                <a href="https://${data.github}" target="_blank" rel="noopener noreferrer" class="truncate font-medium hover:underline">GitHub Profile</a>
+            </div>
+        `;
+        document.getElementById('contact-info').innerHTML = contactHtml;
+
+
+        // --- 2. Populate Education ---
+        const educationList = document.getElementById('education-list');
+        data.education.forEach(edu => {
+            const card = `
+                <div class="p-4 bg-white rounded-xl shadow-md border-l-4 border-cyan-500 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-lg font-semibold text-gray-800">${edu.degree}</h4>
+                        <span class="text-sm font-medium text-cyan-600 bg-cyan-100 px-3 py-1 rounded-full">${edu.years}</span>
+                    </div>
+                    <p class="text-gray-600 mt-1">${edu.institution}</p>
+                    <p class="text-sm font-medium text-gray-700 mt-2">${edu.grade}</p>
+                </div>
+            `;
+            educationList.innerHTML += card;
+        });
+
+        // --- 3. Populate Projects ---
+        const projectsList = document.getElementById('projects-list');
+        data.projects.forEach(project => {
+            const tagsHtml = project.tags.map(tag => 
+                `<span class="text-xs font-medium text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-full">${tag}</span>`
+            ).join('');
+
+            const descriptionHtml = project.description.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+            const card = `
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-cyan-500 flex flex-col h-full project-card">
+                    <div class="flex items-center mb-4">
+                        ${getIconHtml(project.icon, 'w-8 h-8 text-cyan-600 mr-3 p-1.5 bg-cyan-100 rounded-full')}
+                        <h3 class="text-xl font-bold text-gray-900">${project.title}</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 flex-grow">${descriptionHtml}</p>
+                    <div class="mt-auto flex flex-col pt-3 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            ${tagsHtml}
+                        </div>
+                        <a 
+                            href="${project.githubLink}" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="flex items-center justify-center bg-cyan-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-cyan-700 transition duration-300 shadow-md"
+                        >
+                            ${getIconHtml('link', 'w-4 h-4 mr-2')}
+                            View Project Code (Placeholder)
+                        </a>
+                    </div>
+                </div>
+            `;
+            projectsList.innerHTML += card;
+        });
+
+
+        // --- 4. Populate Skills ---
+        const skillsGrid = document.getElementById('skills-grid');
+        const skillTitles = {
+            languages: "Languages",
+            ai_ml: "AI/ML",
+            databases_cloud: "Databases/Cloud",
+            data_viz: "Data Visualization",
+            tools: "Tools/Platforms"
+        };
+
+        Object.keys(data.skills).forEach(categoryKey => {
+            const categorySkills = data.skills[categoryKey];
+            const title = skillTitles[categoryKey];
+            
+            const skillsHtml = categorySkills.map(skill => 
+                `<span class="px-3 py-1 text-sm font-medium text-cyan-700 bg-cyan-50 rounded-full hover:bg-cyan-100 transition duration-300 transform hover:scale-105 shadow-sm">
+                    ${skill}
+                </span>`
+            ).join('');
+
+            const card = `
+                <div class="p-4 bg-white rounded-xl shadow-inner border border-gray-100">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 border-b pb-2 border-cyan-100">${title}</h3>
+                    <div class="flex flex-wrap gap-2">
+                        ${skillsHtml}
+                    </div>
+                </div>
+            `;
+            skillsGrid.innerHTML += card;
+        });
+        
+        // --- 5. Final Step: Replace Lucide Icon placeholders with actual SVGs ---
+        // This is necessary because Lucide is dynamically loading icons using data-lucide attributes.
+        lucide.createIcons();
+    </script>
+</body>
+</html>
